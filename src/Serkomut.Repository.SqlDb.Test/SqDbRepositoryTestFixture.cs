@@ -16,6 +16,7 @@ namespace Serkomut.Repository.SqlDb.Test
                 Surname = "Guzel"
             };
             var entity = Repository.Add(person);
+            Repository.Save();
         }
 
         private static IRepository<Person> Repository

@@ -30,6 +30,7 @@ namespace Serkomut.Repository.SqlDb
 
         public T Add(T entity)
         {
+            entity.Id = Guid.NewGuid();
             return dbset.Add(entity);
         }
 

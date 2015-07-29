@@ -6,6 +6,6 @@ namespace Serkomut.Repository.Core
     public abstract class BaseEntity
     {
          [Key]
-         public Guid PId { get; set; }
+         public Guid Id { get; set; }
     }
 }
