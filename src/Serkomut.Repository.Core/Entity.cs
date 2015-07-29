@@ -1,7 +1,10 @@
-﻿namespace Serkomut.Repository.Core
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Serkomut.Repository.Core
 {
     public abstract class Entity<T> : BaseEntity, IEntity<T>
     {
-        public virtual T Id { get; set; }
+        [Key]
+        public T Id { get; set; }
     }
 }
